@@ -13,12 +13,19 @@ To integrate Pingu into your command-line environment, follow these steps:
     git clone https://github.com/your-username/pingu.git
     ```
 
-2. Add the following line to your `.bashrc` or `.bash_aliases` file:
+2. Activate the virtual environment:
+    ```bash
+    python3 -m venv env
+    source env/bin/activate
+    pip install -r requirements.txt 
+    ```
+
+3. Add the following line to your `.bashrc` or `.bash_aliases` file:
     ```bash
     alias pingu="bash $HOME/path/to/pingu/pingu.sh"
     ```
 
-3. Source your `.bashrc` or `.bash_aliases` file to apply the changes of just log out:
+4. Source your `.bashrc` or `.bash_aliases` file to apply the changes of just log out:
     ```bash
     source ~/.bashrc
     ```
