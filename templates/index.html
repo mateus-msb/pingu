@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Noot Noot</title>
+    <style>
+        body, html{
+            margin: 0;
+            padding: 0;
+            height: 100;
+            overflow: hidden;
+        }
+        #pingu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+        }
+        #audio-play {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <img id="pingu" src="media/nootnoot.jpg" />
+    <audio id="audio-play" autoplay controls>
+        <source src="media/Lacrimosa.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
